@@ -13,18 +13,18 @@
     <script>
         document.addEventListener('DOMContentLoaded', async () => {
 
-            const stories = await(await fetch('https://api.stories.studio/v1/teams/stories.teamjoin.fr/stories?alias=test-SEO-1')).json();
+            const stories = await(await fetch('https://api.stories.studio/v1/teams/gym-info/stories?alias=test-1')).json();
             if(stories[0])document.getElementById('js-here-0').innerHTML += `
             <a style="color: #97A9BD" href="${stories[0].url}">
                 Viens regarder ma story.
             </a>`;
 
-            const stories1 = await(await fetch('https://api.stories.studio/v1/teams/stories.teamjoin.fr/stories?alias=test-SEO-2')).json();
-            if(stories1[0])document.getElementById('js-here-1').innerHTML += `<iframe height="200" width="120" frameborder="0" src="${stories1[0].url}"></iframe>`;
+            const stories1 = await(await fetch('https://api.stories.studio/v1/teams/gym-info/stories?alias=test-2')).json();
+            if(stories1[0])document.getElementById('js-here-1').innerHTML += `<iframe height="400" width="240" frameborder="0" src="${stories1[0].url}"></iframe>`;
 
-            const stories2 = await(await fetch('https://api.stories.studio/v1/teams/stories.teamjoin.fr/stories?alias=test-SEO-3')).json();
+            const stories2 = await(await fetch('https://api.stories.studio/v1/teams/gym-info/stories?alias=test-3')).json();
             if(stories2[0])document.getElementById('js-here-2').innerHTML += `
-            <amp-story-player style="width: 120px; height: 200px;margin: auto;">
+            <amp-story-player style="width: 240px; height: 400px;margin: auto;">
                 <a
                         href="${stories2[0].url}"
                         style="--story-player-poster: url('https://www-washingtonpost-com.cdn.ampproject.org/i/s/www.washingtonpost.com/graphics/2019/lifestyle/travel/amp-stories/a-locals-guide-to-what-to-eat-and-do-in-new-york-city/img/promo3x4.jpg');"
@@ -58,15 +58,15 @@
         </nav>
     </header>
 </div>
-<div id="js-here-0" style="height: 200px;margin: auto;text-align: center; font-size: 50px;">
+<div id="js-here-0" style="height: 100px;margin: auto;text-align: center; font-size: 50px;">
     <!-- #############################################To Do################################################### -->
 
 </div>
-<div id="js-here-1" style="height: 200px;margin: auto;text-align: center; font-size: 50px;">
+<div id="js-here-1" style="height: 400px;margin: auto;text-align: center; font-size: 50px;">
     <!-- #############################################To Do################################################### -->
 
 </div>
-<div id="js-here-2" style="height: 200px;margin: auto;text-align: center; font-size: 50px;">
+<div id="js-here-2" style="height: 400px;margin: auto;text-align: center; font-size: 50px;">
     <!-- #############################################To Do################################################### -->
 
 </div>
